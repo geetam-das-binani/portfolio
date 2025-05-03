@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-text: 15 23 42;
+    --color-background: 248 250 252;
+    --color-primary: 15 118 110;
+    --color-secondary: 79 70 229;
+    --color-accent: 234 88 12;
+    --color-muted: 100 116 139;
+    cursor: none;
+  }
+
+  .dark {
+    --color-text: 248 250 252;
+    --color-background: 15 23 42;
+    --color-primary: 20 184 166;
+    --color-secondary: 99 102 241;
+    --color-accent: 249 115 22;
+    --color-muted: 148 163 184;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-gradient-to-br from-background to-slate-100 dark:from-background dark:to-slate-900 text-text font-sans antialiased min-h-screen;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+    line-height: 1.2;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl sm:text-3xl;
+  }
+
+  p {
+    @apply text-base leading-relaxed;
+  }
+
+  a:not(.custom-cursor) {
+    @apply cursor-none;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold mb-12 relative inline-block;
+  }
+
+  .section-title::after {
+    content: "";
+    @apply block h-1 bg-gradient-to-r from-primary to-secondary mt-2 rounded-full;
+    width: 120%;
+    margin-left: -10%;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-gradient-to-r from-primary to-secondary px-5 py-2.5 text-white font-medium shadow-lg hover:shadow-xl hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-md bg-gradient-to-r from-secondary to-accent px-5 py-2.5 text-white font-medium shadow-lg hover:shadow-xl hover:scale-105 focus:outline-none focus:ring-2 focus:ring-secondary/50 transition-all duration-300;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center rounded-md border-2 border-primary px-5 py-2.5 text-primary font-medium hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white hover:border-transparent hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all duration-300;
+  }
+
+  .card {
+    @apply rounded-xl bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-shadow duration-300 overflow-hidden border border-slate-200/50 dark:border-slate-700/50;
+  }
+
+  .timeline-dot {
+    @apply absolute left-0 w-4 h-4 rounded-full bg-gradient-to-r from-primary to-secondary -translate-x-1/2 shadow-lg;
+  }
+
+  .skill-bar {
+    @apply h-2.5 rounded-full bg-gradient-to-r from-primary to-secondary relative overflow-hidden;
+  }
+
+  .skill-bar::after {
+    content: "";
+    @apply absolute inset-0 bg-white/20 animate-pulse;
+  }
+}
+
+/* Hide default cursor when using custom cursor */
+* {
+  cursor: none !important;
+}
+
+@media (max-width: 768px) {
+  * {
+    cursor: auto !important;
+  }
+}
