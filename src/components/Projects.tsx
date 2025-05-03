@@ -150,8 +150,7 @@ export default function Projects() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            A selection of my recent work across web applications, mobile apps,
-            and UI/UX design projects.
+            A selection of my recent work across web applications.
           </motion.p>
         </div>
 
