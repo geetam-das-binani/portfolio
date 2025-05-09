@@ -85,21 +85,7 @@ const projects = [
     demoUrl: "https://mern-booking-app-fji3.onrender.com/",
     githubUrl: "https://github.com/geetam-das-binani/mern-booking-app",
   },
-  {
-    id: 6,
-    title: "LearnDo",
-    description:
-      "An interactive  platform to learn any language with interactive lessons and quizzes.",
-    image: "/learn.png",
-    category: "web",
-    tags: [
-      "React.js",
-      "TypeScript",
-      "Material UI"
-    ],
-    demoUrl: "https://learndo.vercel.app/",
-    githubUrl: "https://github.com/geetam-das-binani/learndo",
-  },
+ 
 ];
 
 export default function Projects() {
