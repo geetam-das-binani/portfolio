@@ -85,7 +85,24 @@ const projects = [
     demoUrl: "https://mern-booking-app-fji3.onrender.com/",
     githubUrl: "https://github.com/geetam-das-binani/mern-booking-app",
   },
- 
+
+  {
+    id: 6,
+    title: "Job Portal",
+    description:
+      "A job portal that allows users to search for jobs and apply for them and allows employers to post jobs.",
+    image: "/job.png",
+    category: "web",
+    tags: [
+      "React.js",
+      "Tailwind Css",
+      "Supabase",
+      "Clerk"
+      
+    ],
+    demoUrl: "https://hired-q16g.vercel.app/",
+    githubUrl: "https://github.com/geetam-das-binani/hired",
+  },
 ];
 
 export default function Projects() {
