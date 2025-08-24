@@ -34,6 +34,24 @@ const projects = [
   },
   {
     id: 3,
+    title: "AI Photo Editor",
+    description:
+      "AI Photo Editor – An  app with core editing tools and AI features like background removal, upscaling, AI backgrounds, and image extender (outpainting).",
+    image: "/pixxel.png",
+    category: "web",
+    tags: [
+      "Next.js",
+      "Tailwind Css",
+      "Convex Db",
+      "Clerk",
+      "ImageKit",
+      "Fabric JS",
+    ],
+    demoUrl: "https://ai-photo-editor-pixxel.vercel.app/",
+    githubUrl: "https://github.com/geetam-das-binani/AI-Photo-Editor",
+  },
+  {
+    id: 4,
     title: "Calendly Clone",
     description:
       "A scheduling platform that allows users to book meetings and manage availability.",
@@ -51,24 +69,30 @@ const projects = [
     githubUrl: "https://github.com/geetam-das-binani/calendly",
   },
   {
-    id: 4,
+    id: 5,
     title: "AI Cancer Care",
     description:
       "AI Cancer Care is an advanced platform that leverages AI to deliver personalized cancer treatment plans.",
     image: "/cancer.png",
     category: "web",
-    tags: [
-      "React.js",
-      "Drizzle Orm",
-      "Tailwind CSS",
-      "Privy Auth",
-      "Neon Db",
-    ],
+    tags: ["React.js", "Drizzle Orm", "Tailwind CSS", "Privy Auth", "Neon Db"],
     demoUrl: "https://beat-cancer.onrender.com/",
     githubUrl: "https://github.com/geetam-das-binani/beat-cancer",
   },
+
   {
-    id: 5,
+    id: 6,
+    title: "Job Portal",
+    description:
+      "A job portal that allows users to search for jobs and apply for them and allows employers to post jobs.",
+    image: "/job.png",
+    category: "web",
+    tags: ["React.js", "Tailwind Css", "Supabase", "Clerk"],
+    demoUrl: "https://hired-q16g.vercel.app/",
+    githubUrl: "https://github.com/geetam-das-binani/hired",
+  },
+  {
+    id: 7,
     title: "Hotel Booking App",
     description:
       "A user-friendly hotel booking app with advanced filters, detailed listings,Stripe payments and seamless booking.",
@@ -80,28 +104,10 @@ const projects = [
       "Node.js",
       "MongoDB",
       "Tailwind CSS",
-      "Stripe"
+      "Stripe",
     ],
     demoUrl: "https://mern-booking-app-fji3.onrender.com/",
     githubUrl: "https://github.com/geetam-das-binani/mern-booking-app",
-  },
-
-  {
-    id: 6,
-    title: "Job Portal",
-    description:
-      "A job portal that allows users to search for jobs and apply for them and allows employers to post jobs.",
-    image: "/job.png",
-    category: "web",
-    tags: [
-      "React.js",
-      "Tailwind Css",
-      "Supabase",
-      "Clerk"
-      
-    ],
-    demoUrl: "https://hired-q16g.vercel.app/",
-    githubUrl: "https://github.com/geetam-das-binani/hired",
   },
 ];
 
