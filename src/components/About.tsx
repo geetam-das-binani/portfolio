@@ -45,7 +45,7 @@ export default function About() {
           >
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="/hero.png"
+                src="/professional.jpeg"
                 alt="Professional portrait"
                 className="w-full h-full object-cover"
               />
